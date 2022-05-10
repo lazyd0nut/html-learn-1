@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html style="font-family: Arial, Helvetica, sans-serif;">
+    <head>
+        <style>
+            .pet-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+            }
+            .pet{
+                /* display: inline-block; */
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                margin: 5px;
+            }
+            .pets-name{
+                font-weight: bold;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                margin-left: 6px;
+                margin-right: 2px;
+            }
+            .friends-num{
+                color: gray;
+                font-size: small;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                margin-left: 6px;
+                margin-right: 2px;
+            }
+            .friend-add{
+                width: 90px;
+                height: 30px;
+                background-color: rgb(67, 145, 241);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 8px;
+                margin-top: 5px;
+                margin-bottom: 8px;
+                margin-left: 6px;
+                margin-right: 2px;
+            }
+            .tweet-box{
+                margin: 5px;
+                width: 463px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                display:inline-block;
+                padding: 8px;
+                border-radius: 4px;
+            }
+            .tweet-img{
+                object-fit: cover;
+                border-radius: 50px;
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+            }
+            .text-bx{
+                border: none;
+                vertical-align: middle;
+                font-size: 14px;
+                width: 330px;
+            }
+            .tweet-button{
+                vertical-align: middle;
+                color: white;
+                background-color: rgb(69, 184, 255);
+                border: none;
+                border-radius: 16px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+            .pet-profile{
+                margin-left: 15px;
+                width: 485px;
+                height: 80px;
+                display: inline-block;
+            }
+            .pet-img-container{
+                display: inline-block;
+            }
+            .pet-img{
+                object-fit: cover;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+            .pet-description{
+                display: inline-block;
+                line-height: 3px;
+            }
+            .follow-button{
+                display: inline-block;
+                margin-top: 25px;
+                margin-left: 100px;
+                vertical-align: top;
+            }
+            .follw-button{
+                background-color: rgb(67, 145, 241);
+                color: white;
+                border: none;
+                padding: 8px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pet-grid">
+            <div class="pet">
+                <img style="object-fit:cover;" src="imgs/cat1.webp" alt="cute pet" width="150px" height="150px">
+                <p class="pets-name">Oliver</p>
+                <p class="friends-num">2 mutual friends</p>
+                <button class="friend-add">Add Friend</button>
+            </div>
+            <div class="pet">
+                <img style="object-fit:cover;" src="imgs/corgi.jpg" alt="cute pet" width="150px" height="150px">
+                <p class="pets-name">Jojo</p>
+                <p class="friends-num">3 mutual friends</p>
+                <button class="friend-add">Add Friend</button>
+            </div>
+            <div class="pet">
+                <img style="object-fit:cover;" src="imgs/doge.webp" alt="cute pet" width="150px" height="150px">
+                <p class="pets-name">Rex</p>
+                <p class="friends-num">4 mutual friends</p>
+                <button class="friend-add">Add Friend</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        
+        <div>
+            <div class="tweet-box">
+                <img class="tweet-img" src="imgs/dawg.jpg" alt="cute pet">
+                <input class="text-bx" type="text" placeholder="What's happening?">
+                <button class="tweet-button">Tweet</button>
+            </div>
+        </div>
+       
+       
+       
+        <div class="pet-profile">
+            <div class="pet-img-container">
+                <img class="pet-img" src="imgs/dawg.jpg" alt="cute pet">
+            </div>
+            <div class="pet-description">
+                <p style="font-weight:bold">jerry</p>
+                <p style="color: gray;">the dog</p>
+                <p style="color: gray; font-size: 14px;">shy</p>
+            </div>
+            <div class="follow-button">
+                <button class="follw-button">Follow</button>
+            </div>
+        </div>
+
+
+        <div class="pet-profile">
+            <div class="pet-img-container">
+                <img class="pet-img" src="imgs/corgi.jpg" alt="cute pet">
+            </div>
+            <div class="pet-description">
+                <p style="font-weight:bold">jojo</p>
+                <p style="color: gray;">the dog</p>
+                <p style="color: gray; font-size: 14px;">cute</p>
+            </div>
+            <div class="follow-button">
+                <button class="follw-button">Follow</button>
+            </div>
+        </div>
+
+        <div class="pet-profile">
+            <div class="pet-img-container">
+                <img class="pet-img" src="imgs/dawg.jpg" alt="cute pet">
+            </div>
+            <div class="pet-description">
+                <p style="font-weight:bold">rex</p>
+                <p style="color: gray;">the dog</p>
+                <p style="color: gray; font-size: 14px;">popular</p>
+            </div>
+            <div class="follow-button">
+                <button class="follw-button">Follow</button>
+            </div>
+        </div>
+
+    </body>
+</html>
